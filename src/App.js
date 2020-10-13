@@ -1,16 +1,27 @@
-import React from 'react';
-import'bootsrap/dist/css/bootstrap.min.css';
-import 'weather-icons/css/weather-icons.css';
-import  Main from'./Main';
-
+import React, { useState } from "react";
+import CurrentLocation from "./CurrentLocation";
+import "./App.css";
 
 function App() {
   return (
-    <div className="app">
-      <main>
-         <Main/>
-      </main>
-    </div>
+    <React.Fragment>
+      <div className="container">
+        <CurrentLocation />
+      </div>
+      <div className="footer-info">
+        <a href="https://www.htmlhints.com/article/how-to-create-toggle-switch/93">
+          Download Source Code
+        </a>{" "}
+        | Developed by{" "}
+        <a target="_blank" href="https://www.gauravghai.dev/">
+          Gaurav Ghai
+        </a>{" "}
+        | Powered by{" "}
+        <a target="_blank" href="https://www.htmlhints.com/">
+          HTML HINTS
+        </a>
+      </div>
+    </React.Fragment>
   );
 }
 
